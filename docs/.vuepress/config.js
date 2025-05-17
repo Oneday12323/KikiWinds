@@ -1,19 +1,14 @@
-// import { viteBundler } from '@vuepress/bundler-vite'
-// import { gungnirTheme } from '@vuepress/theme-gungnir'
-// import { defineUserConfig } from 'vuepress'
- 
-// export default defineUserConfig({
-//   bundler: viteBundler(),
-//   theme: gungnirTheme(),
-// })
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
  
 export default defineUserConfig({
+    // 设置 base 为您的仓库名
+    base: '/KikiWinds/',
+    
     bundler: viteBundler(),
     theme: defaultTheme({
-        // 在这里进行配置
+        // 其余配置保持不变
         navbar: [
             // NavbarItem
             { text: '首页', link: '/', },
@@ -56,6 +51,6 @@ export default defineUserConfig({
     }),
  
     lang: 'zh-CN',
-    title: 'yan的博客',
-    description: '欢迎来到yan的博客',
+    title: 'KiKiWinds',
+    description: '欢迎来到KiKiWinds',
 })
