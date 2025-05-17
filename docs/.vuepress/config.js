@@ -18,7 +18,6 @@ export default defineUserConfig({
                 children: [
                     { text: 'Github', link: 'https://github.com/Oneday12323' },
                     { text: '知乎', link: '/' },
-                    { text: '掘金', link: '/' },
                 ],
             },
         ],
